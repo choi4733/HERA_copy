@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤라 카피페이지</title>
+    <link rel="stylesheet" href="reset.css" />
+
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
+
+    <!-- 내 css -->
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="section.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header_inner">
+        <a href="#" class="back" title="뒤로가기" aria-label="뒤로가기"></a>
+        <a href="#">
+          <h1 id="logo">
+            <span class="blind">HERA</span>
+
+            <!-- 검은색 로고 -->
+            <span class="logo_img logo_black" aria-hidden="true">
+              <img src="img/logo_black.png" alt="" />
+            </span>
+
+            <!-- 흰색 로고 -->
+            <span class="logo_img logo_white" aria-hidden="true">
+              <img src="img/logo_white.png" alt="" />
+            </span>
+          </h1>
+        </a>
+        <div class="util">
+          <a href="#" class="search" title="검색" aria-label="검색">검색</a>
+          <a href="#" class="cart" title="장바구니" aria-label="장바구니"
+            >장바구니</a
+          >
+        </div>
+      </div>
+      <nav class="nav_swiper swiper">
+        <ul class="nav_list swiper-wrapper">
+          <li class="swiper-slide"><a href="#" class="active">홈</a></li>
+          <li class="swiper-slide"><a href="#">전체상품</a></li>
+          <li class="swiper-slide"><a href="#">FACE</a></li>
+          <li class="swiper-slide"><a href="#">LIP</a></li>
+          <li class="swiper-slide"><a href="#">UV</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header -->
+
+    <section style="min-height: 2000px; padding-top: 104px">
+      스크롤 테스트
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script>
+      const navSwiper = new Swiper(".nav_swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        freeMode: true,
+        watchOverflow: true,
+      });
+
+      const header = document.querySelector("#header");
+
+      function changeHeaderColor() {
+        header.classList.toggle("is_scrolled", window.scrollY > 20);
+      }
+
+      changeHeaderColor();
+
+      window.addEventListener("scroll", changeHeaderColor, {
+        passive: true,
+      });
+    </script>
+  </body>
+</html>

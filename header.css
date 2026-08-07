@@ -1,0 +1,155 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+#header::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#header.is_scrolled::before {
+  opacity: 1;
+}
+
+.header_inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  height: 56px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.blind {
+  position: absolute;
+  overflow: hidden;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+/*LOGO  */
+#logo {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  width: 160px;
+  height: 32px;
+  margin: 0;
+  transform: translateX(-50%);
+}
+
+.logo_img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+.logo_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 검은색 로고  */
+.logo_black {
+  opacity: 1;
+}
+
+/* 흰색로고 */
+.logo_white {
+  opacity: 0;
+}
+
+/* 로고 스크롤 색상변화 */
+#header.is_scrolled .logo_black {
+  opacity: 0;
+}
+#header.is_scrolled .logo_white {
+  opacity: 1;
+}
+.back,
+.search,
+.cart {
+  filter: none;
+  transition: filter 0.3s ease;
+}
+
+.back {
+  width: 32px;
+  height: 32px;
+}
+.util {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  font-weight: 600;
+}
+#header.is_scrolled .back,
+#header.is_scrolled .search,
+#header.is_scrolled .cart {
+  filter: brightness(0) invert(1);
+}
+/* nav */
+.nav_swiper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1024px;
+  height: 48px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.nav_list {
+  padding-left: 20px;
+  gap: 5px;
+}
+.nav_list .swiper-slide {
+  width: auto;
+  font-size: 1rem;
+}
+.nav_list .swiper-slide a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  color: #797979;
+  white-space: nowrap;
+}
+.nav_list .swiper-slide a.active {
+  color: #121212;
+  font-weight: 600;
+}
+.nav_list .swiper-slide a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 2px;
+  background-color: #121212;
+}

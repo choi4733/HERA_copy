@@ -1,0 +1,150 @@
+/* =========================
+   Font
+========================= */
+
+@font-face {
+  font-family: "PretendardJP";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("PretendardJP-Regular"),
+    url("https://apm-web.amoremall.com/public/apcp-css/3.0.147/public/fonts/PretendardJP-Regular.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "PretendardJP";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("PretendardJP-SemiBold"),
+    url("https://apm-web.amoremall.com/public/apcp-css/3.0.147/public/fonts/PretendardJP-SemiBold.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "PretendardJP";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("PretendardJP-Bold"),
+    url("https://apm-web.amoremall.com/public/apcp-css/3.0.147/public/fonts/PretendardJP-Bold.woff2")
+      format("woff2");
+}
+
+/* =========================
+   Reset
+========================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family:
+    "PretendardJP",
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    sans-serif;
+
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000;
+
+  word-break: break-all;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+/* list */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* link */
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* button / form */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* image */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* text */
+address,
+em,
+i {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+strong {
+  font-weight: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
