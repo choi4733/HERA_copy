@@ -14,12 +14,14 @@
 
     <!-- 내 css -->
     <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/section.css" />
+    <link rel="stylesheet" href="css/banner.css" />
   </head>
   <body>
     <header id="header">
       <div class="header_inner">
-        <a href="#" class="back" title="뒤로가기" aria-label="뒤로가기"></a>
+        <a href="#" class="back" title="뒤로가기" aria-label="뒤로가기">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
         <a href="#">
           <h1 id="logo">
             <span class="blind">HERA</span>
@@ -36,10 +38,12 @@
           </h1>
         </a>
         <div class="util">
-          <a href="#" class="search" title="검색" aria-label="검색">검색</a>
-          <a href="#" class="cart" title="장바구니" aria-label="장바구니"
-            >장바구니</a
-          >
+          <a href="#" class="search" title="검색" aria-label="검색">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <a href="#" class="cart" title="장바구니" aria-label="장바구니">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
         </div>
       </div>
       <nav class="nav_swiper swiper">
@@ -54,30 +58,197 @@
     </header>
     <!-- header -->
 
-    <section style="min-height: 2000px; padding-top: 104px">
-      스크롤 테스트
-    </section>
-    <!-- Swiper JS -->
+    <main class="container">
+      <section class="main_banner">
+        <h2 id="main-banner-title" class="blind">헤라 주요 프로모션</h2>
+        <div class="banner_swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    30시간 무너짐 없는 <br />
+                    초밀착 블러 새틴 스킨
+                  </p>
+                  <p class="banner_desc">블랙 쿠션 파운데이션</p>
+                </div>
+                <div class="banner_visual">
+                  <img
+                    src="img/mainBanner1.png"
+                    alt="헤라 블랙 쿠션 파운데이션"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    한 번의 터치로 <br />
+                    맑고 선명하게 스며드는
+                  </p>
+                  <p class="banner_desc">NEW 리플렉션 리퀴드 블러쉬</p>
+                </div>
+                <div class="banner_visual">
+                  <img src="img/mainBanner2.jpg" alt="리플렉션 리퀴드 블러쉬" />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    투명한 속광과 <br />
+                    자연스러운 결
+                  </p>
+                  <p class="banner_desc">NEW 프로텍터 패밀리</p>
+                </div>
+                <div class="banner_visual">
+                  <img src="img/mainBanner3.jpg" alt="프로텍터 패밀리" />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    흰동백의 에너지로 <br />
+                    타고난듯 빛나는 피부
+                  </p>
+                  <p class="banner_desc">NEW 헤라 시그니아 라인</p>
+                </div>
+                <div class="banner_visual">
+                  <img src="img/mainBanner4.jpg" alt="헤라 시그니아 라인" />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    얇게 빛나는 수분 광채 <br />
+                    생기있게 물드는
+                  </p>
+                  <p class="banner_desc">NEW 센슈얼 틴티드 샤인 립 세럼</p>
+                </div>
+                <div class="banner_visual">
+                  <img
+                    src="img/mainBanner5.jpg"
+                    alt="센슈얼 틴티드 샤인 립 세럼"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    얇게 스며들어 속부터 <br />
+                    투명하게 빛나는
+                  </p>
+                  <p class="banner_desc">리플렉션 스킨 글로우 파운데이션</p>
+                </div>
+                <div class="banner_visual">
+                  <img
+                    src="img/mainBanner6.jpg"
+                    alt="리플렉션 스킨 글로우 파운데이션"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    부드럽게 밀착되는 <br />
+                    광택감의 글로스
+                  </p>
+                  <p class="banner_desc">센슈얼 누드 글로스</p>
+                </div>
+                <div class="banner_visual">
+                  <img src="img/mainBanner7.jpg" alt="센슈얼 누드 글로스" />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    속부터 투명하게 차올라 <br />
+                    유연하게 빛나는 피부
+                  </p>
+                  <p class="banner_desc">리플렉션 스킨 글로우 쿠션</p>
+                </div>
+                <div class="banner_visual">
+                  <img
+                    src="img/mainBanner8.jpg"
+                    alt="리플렉션 스킨 글로우 쿠션"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    처음 바른 컬러 그대로 <br />
+                    12시간 지속
+                  </p>
+                  <p class="banner_desc">센슈얼 틴티드 샤인 스틱</p>
+                </div>
+                <div class="banner_visual">
+                  <img
+                    src="img/mainBanner9.jpg"
+                    alt="센슈얼 틴티드 샤인 스틱"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="banner_link">
+                <div class="banner_text">
+                  <p class="banner_title">
+                    205가지 쉐이드 <br />
+                    주문 후 즉시 조제
+                  </p>
+                  <p class="banner_desc">커스텀 매치 실키스테이</p>
+                </div>
+                <div class="banner_visual">
+                  <img
+                    src="img/mainBanner10.png"
+                    alt="커스텀 매치 실키스테이"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <button
+            class="banner_next"
+            type="button"
+            aria-label="다음배너"
+          ></button>
+          <button
+            class="banner_prev"
+            type="button"
+            aria-label="이전배너"
+          ></button>
+        </div>
+        <div class="banner_thumbs swiper"></div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <!-- footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
-    <script>
-      const navSwiper = new Swiper(".nav_swiper", {
-        slidesPerView: "auto",
-        spaceBetween: 30,
-        freeMode: true,
-        watchOverflow: true,
-      });
+    <!-- Swiper JS -->
 
-      const header = document.querySelector("#header");
+    <script
+      src="https://kit.fontawesome.com/fb27592f06.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
 
-      function changeHeaderColor() {
-        header.classList.toggle("is_scrolled", window.scrollY > 20);
-      }
-
-      changeHeaderColor();
-
-      window.addEventListener("scroll", changeHeaderColor, {
-        passive: true,
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
