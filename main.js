@@ -67,17 +67,15 @@ const bannerSwiper = new Swiper(".banner_swiper", {
   },
 
   navigation: {
-    nextEl: ".banner_next",
     prevEl: ".banner_prev",
+    nextEl: ".banner_next",
   },
 
-  // Swiper가 처음 실행될 때
   on: {
     init() {
       changeBannerContent(this.realIndex);
     },
 
-    // 실제 이미지 번호가 변경될 때
     realIndexChange() {
       changeBannerContent(this.realIndex);
     },
@@ -92,7 +90,7 @@ function restartBannerAutoplay() {
   bannerSwiper.autoplay.start();
 }
 
-// 썸네일 클릭 시 해당 이미지로 이동
+// 썸네일 클릭
 bannerThumbs.forEach((thumb) => {
   thumb.addEventListener("click", () => {
     const slideIndex = Number(thumb.dataset.slide);
@@ -101,10 +99,3 @@ bannerThumbs.forEach((thumb) => {
     restartBannerAutoplay();
   });
 });
-
-// 이전·다음 버튼 클릭 후 자동재생 다시 시작
-const bannerPrev = document.querySelector(".banner_prev");
-const bannerNext = document.querySelector(".banner_next");
-
-bannerPrev?.addEventListener("click", restartBannerAutoplay);
-bannerNext?.addEventListener("click", restartBannerAutoplay);
