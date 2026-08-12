@@ -15,6 +15,7 @@
     <!-- 내 css -->
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/shop.css" />
   </head>
   <body>
     <header id="header">
@@ -59,295 +60,874 @@
     <!-- header -->
 
     <main class="container">
-      <section class="main_banner">
-        <h2 id="main-banner-title" class="blind">헤라 주요 프로모션</h2>
-        <div class="banner_content">
-          <!-- 왼쪽 고정 영역 -->
-          <div class="banner_left">
-            <div class="banner_text active" data-text="0">
-              <p class="banner_title">
-                30시간 무너짐 없는 <br />
-                초밀착 블러 새틴 스킨
-              </p>
-              <p class="banner_desc">블랙 쿠션 파운데이션</p>
+      <section class="banner_section">
+        <div class="main_banner">
+          <h2 id="main-banner-title" class="blind">헤라 주요 프로모션</h2>
+          <div class="banner_content">
+            <!-- 왼쪽 고정 영역 -->
+            <div class="banner_left">
+              <div class="banner_text active" data-text="0">
+                <p class="banner_title">
+                  30시간 무너짐 없는 <br />
+                  초밀착 블러 새틴 스킨
+                </p>
+                <p class="banner_desc">블랙 쿠션 파운데이션</p>
+              </div>
+
+              <div class="banner_text" data-text="1">
+                <p class="banner_title">
+                  한 번의 터치로 <br />
+                  맑고 선명하게 스며드는
+                </p>
+                <p class="banner_desc">NEW 리플렉션 리퀴드 블러쉬</p>
+              </div>
+
+              <div class="banner_text" data-text="2">
+                <p class="banner_title">
+                  투명한 속광과 <br />
+                  자연스러운 결
+                </p>
+                <p class="banner_desc">NEW 프로텍터 패밀리</p>
+              </div>
+
+              <div class="banner_text" data-text="3">
+                <p class="banner_title">
+                  흰동백의 에너지로 <br />
+                  타고난듯 빛나는 피부
+                </p>
+                <p class="banner_desc">NEW 헤라 시그니아 라인</p>
+              </div>
+
+              <div class="banner_text" data-text="4">
+                <p class="banner_title">
+                  얇게 빛나는 수분 광채 <br />
+                  생기있게 물드는
+                </p>
+                <p class="banner_desc">NEW 센슈얼 틴티드 샤인 립 세럼</p>
+              </div>
+
+              <div class="banner_text" data-text="5">
+                <p class="banner_title">
+                  얇게 스며들어 속부터 <br />
+                  투명하게 빛나는
+                </p>
+                <p class="banner_desc">리플렉션 스킨 글로우 파운데이션</p>
+              </div>
+
+              <div class="banner_text" data-text="6">
+                <p class="banner_title">
+                  부드럽게 밀착되는 <br />
+                  광택감의 글로스
+                </p>
+                <p class="banner_desc">센슈얼 누드 글로스</p>
+              </div>
+
+              <div class="banner_text" data-text="7">
+                <p class="banner_title">
+                  속부터 투명하게 차올라 <br />
+                  유연하게 빛나는 피부
+                </p>
+                <p class="banner_desc">리플렉션 스킨 글로우 쿠션</p>
+              </div>
+
+              <div class="banner_text" data-text="8">
+                <p class="banner_title">
+                  처음 바른 컬러 그대로 <br />
+                  12시간 지속
+                </p>
+                <p class="banner_desc">센슈얼 틴티드 샤인 스틱</p>
+              </div>
+
+              <div class="banner_text" data-text="9">
+                <p class="banner_title">
+                  205가지 쉐이드 <br />
+                  주문 후 즉시 조제
+                </p>
+                <p class="banner_desc">커스텀 매치 실키스테이</p>
+              </div>
             </div>
 
-            <div class="banner_text" data-text="1">
-              <p class="banner_title">
-                한 번의 터치로 <br />
-                맑고 선명하게 스며드는
-              </p>
-              <p class="banner_desc">NEW 리플렉션 리퀴드 블러쉬</p>
-            </div>
+            <!-- 오른쪽 이미지 영역만 Swiper -->
+            <div class="banner_swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img
+                      src="img/mainBanner1.png"
+                      alt="헤라 블랙 쿠션 파운데이션"
+                    />
+                  </a>
+                </div>
 
-            <div class="banner_text" data-text="2">
-              <p class="banner_title">
-                투명한 속광과 <br />
-                자연스러운 결
-              </p>
-              <p class="banner_desc">NEW 프로텍터 패밀리</p>
-            </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img
+                      src="img/mainBanner2.jpg"
+                      alt="리플렉션 리퀴드 블러쉬"
+                    />
+                  </a>
+                </div>
 
-            <div class="banner_text" data-text="3">
-              <p class="banner_title">
-                흰동백의 에너지로 <br />
-                타고난듯 빛나는 피부
-              </p>
-              <p class="banner_desc">NEW 헤라 시그니아 라인</p>
-            </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img src="img/mainBanner3.jpg" alt="프로텍터 패밀리" />
+                  </a>
+                </div>
 
-            <div class="banner_text" data-text="4">
-              <p class="banner_title">
-                얇게 빛나는 수분 광채 <br />
-                생기있게 물드는
-              </p>
-              <p class="banner_desc">NEW 센슈얼 틴티드 샤인 립 세럼</p>
-            </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img src="img/mainBanner4.jpg" alt="헤라 시그니아 라인" />
+                  </a>
+                </div>
 
-            <div class="banner_text" data-text="5">
-              <p class="banner_title">
-                얇게 스며들어 속부터 <br />
-                투명하게 빛나는
-              </p>
-              <p class="banner_desc">리플렉션 스킨 글로우 파운데이션</p>
-            </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img
+                      src="img/mainBanner5.jpg"
+                      alt="센슈얼 틴티드 샤인 립 세럼"
+                    />
+                  </a>
+                </div>
 
-            <div class="banner_text" data-text="6">
-              <p class="banner_title">
-                부드럽게 밀착되는 <br />
-                광택감의 글로스
-              </p>
-              <p class="banner_desc">센슈얼 누드 글로스</p>
-            </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img
+                      src="img/mainBanner6.jpg"
+                      alt="리플렉션 스킨 글로우 파운데이션"
+                    />
+                  </a>
+                </div>
 
-            <div class="banner_text" data-text="7">
-              <p class="banner_title">
-                속부터 투명하게 차올라 <br />
-                유연하게 빛나는 피부
-              </p>
-              <p class="banner_desc">리플렉션 스킨 글로우 쿠션</p>
-            </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img src="img/mainBanner7.jpg" alt="센슈얼 누드 글로스" />
+                  </a>
+                </div>
 
-            <div class="banner_text" data-text="8">
-              <p class="banner_title">
-                처음 바른 컬러 그대로 <br />
-                12시간 지속
-              </p>
-              <p class="banner_desc">센슈얼 틴티드 샤인 스틱</p>
-            </div>
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img
+                      src="img/mainBanner8.jpg"
+                      alt="리플렉션 스킨 글로우 쿠션"
+                    />
+                  </a>
+                </div>
 
-            <div class="banner_text" data-text="9">
-              <p class="banner_title">
-                205가지 쉐이드 <br />
-                주문 후 즉시 조제
-              </p>
-              <p class="banner_desc">커스텀 매치 실키스테이</p>
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img
+                      src="img/mainBanner9.jpg"
+                      alt="센슈얼 틴티드 샤인 스틱"
+                    />
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="banner_visual">
+                    <img
+                      src="img/mainBanner10.png"
+                      alt="커스텀 매치 실키스테이"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="banner_thumbs" aria-label="배너 썸네일">
+            <button
+              class="banner_thumb active"
+              type="button"
+              data-slide="0"
+              aria-pressed="true"
+            >
+              <img
+                src="img/mainBanner1.png"
+                alt="블랙 쿠션 파운데이션 배너 보기"
+              />
+            </button>
 
-          <!-- 오른쪽 이미지 영역만 Swiper -->
-          <div class="banner_swiper swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img
-                    src="img/mainBanner1.png"
-                    alt="헤라 블랙 쿠션 파운데이션"
-                  />
-                </a>
-              </div>
+            <button
+              class="banner_thumb"
+              type="button"
+              data-slide="1"
+              aria-pressed="false"
+            >
+              <img
+                src="img/mainBanner2.jpg"
+                alt="리플렉션 리퀴드 블러쉬 배너 보기"
+              />
+            </button>
 
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img src="img/mainBanner2.jpg" alt="리플렉션 리퀴드 블러쉬" />
-                </a>
-              </div>
+            <button
+              class="banner_thumb"
+              type="button"
+              data-slide="2"
+              aria-pressed="false"
+            >
+              <img src="img/mainBanner3.jpg" alt="프로텍터 패밀리 배너 보기" />
+            </button>
 
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img src="img/mainBanner3.jpg" alt="프로텍터 패밀리" />
-                </a>
-              </div>
+            <button
+              class="banner_thumb"
+              type="button"
+              data-slide="3"
+              aria-pressed="false"
+            >
+              <img
+                src="img/mainBanner4.jpg"
+                alt="헤라 시그니아 라인 배너 보기"
+              />
+            </button>
 
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img src="img/mainBanner4.jpg" alt="헤라 시그니아 라인" />
-                </a>
-              </div>
+            <button
+              class="banner_thumb"
+              type="button"
+              data-slide="4"
+              aria-pressed="false"
+            >
+              <img
+                src="img/mainBanner5.jpg"
+                alt="센슈얼 틴티드 샤인 립 세럼 배너 보기"
+              />
+            </button>
 
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img
-                    src="img/mainBanner5.jpg"
-                    alt="센슈얼 틴티드 샤인 립 세럼"
-                  />
-                </a>
-              </div>
+            <button
+              class="banner_thumb"
+              type="button"
+              data-slide="5"
+              aria-pressed="false"
+            >
+              <img
+                src="img/mainBanner6.jpg"
+                alt="리플렉션 스킨 글로우 파운데이션 배너 보기"
+              />
+            </button>
 
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img
-                    src="img/mainBanner6.jpg"
-                    alt="리플렉션 스킨 글로우 파운데이션"
-                  />
-                </a>
-              </div>
+            <button
+              class="banner_thumb"
+              type="button"
+              data-slide="6"
+              aria-pressed="false"
+            >
+              <img
+                src="img/mainBanner7.jpg"
+                alt="센슈얼 누드 글로스 배너 보기"
+              />
+            </button>
 
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img src="img/mainBanner7.jpg" alt="센슈얼 누드 글로스" />
-                </a>
-              </div>
+            <button
+              class="banner_thumb"
+              type="button"
+              data-slide="7"
+              aria-pressed="false"
+            >
+              <img
+                src="img/mainBanner8.jpg"
+                alt="리플렉션 스킨 글로우 쿠션 배너 보기"
+              />
+            </button>
 
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img
-                    src="img/mainBanner8.jpg"
-                    alt="리플렉션 스킨 글로우 쿠션"
-                  />
-                </a>
-              </div>
+            <button
+              class="banner_thumb"
+              type="button"
+              data-slide="8"
+              aria-pressed="false"
+            >
+              <img
+                src="img/mainBanner9.jpg"
+                alt="센슈얼 틴티드 샤인 스틱 배너 보기"
+              />
+            </button>
 
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img
-                    src="img/mainBanner9.jpg"
-                    alt="센슈얼 틴티드 샤인 스틱"
-                  />
-                </a>
-              </div>
-
-              <div class="swiper-slide">
-                <a href="#" class="banner_visual">
-                  <img
-                    src="img/mainBanner10.png"
-                    alt="커스텀 매치 실키스테이"
-                  />
-                </a>
-              </div>
-            </div>
+            <button
+              class="banner_thumb"
+              type="button"
+              data-slide="9"
+              aria-pressed="false"
+            >
+              <img src="img/mainBanner10.png" alt="커스텀 매치 배너 보기" />
+            </button>
           </div>
+          <button
+            class="banner_prev"
+            type="button"
+            aria-label="이전 배너"
+          ></button>
+
+          <button
+            class="banner_next"
+            type="button"
+            aria-label="다음 배너"
+          ></button>
         </div>
-        <div class="banner_thumbs" aria-label="배너 썸네일">
-          <button
-            class="banner_thumb active"
-            type="button"
-            data-slide="0"
-            aria-pressed="true"
-          >
-            <img
-              src="img/mainBanner1.png"
-              alt="블랙 쿠션 파운데이션 배너 보기"
-            />
-          </button>
+      </section>
+      <!-- 메인배너  -->
 
-          <button
-            class="banner_thumb"
-            type="button"
-            data-slide="1"
-            aria-pressed="false"
-          >
-            <img
-              src="img/mainBanner2.jpg"
-              alt="리플렉션 리퀴드 블러쉬 배너 보기"
-            />
-          </button>
-
-          <button
-            class="banner_thumb"
-            type="button"
-            data-slide="2"
-            aria-pressed="false"
-          >
-            <img src="img/mainBanner3.jpg" alt="프로텍터 패밀리 배너 보기" />
-          </button>
-
-          <button
-            class="banner_thumb"
-            type="button"
-            data-slide="3"
-            aria-pressed="false"
-          >
-            <img src="img/mainBanner4.jpg" alt="헤라 시그니아 라인 배너 보기" />
-          </button>
-
-          <button
-            class="banner_thumb"
-            type="button"
-            data-slide="4"
-            aria-pressed="false"
-          >
-            <img
-              src="img/mainBanner5.jpg"
-              alt="센슈얼 틴티드 샤인 립 세럼 배너 보기"
-            />
-          </button>
-
-          <button
-            class="banner_thumb"
-            type="button"
-            data-slide="5"
-            aria-pressed="false"
-          >
-            <img
-              src="img/mainBanner6.jpg"
-              alt="리플렉션 스킨 글로우 파운데이션 배너 보기"
-            />
-          </button>
-
-          <button
-            class="banner_thumb"
-            type="button"
-            data-slide="6"
-            aria-pressed="false"
-          >
-            <img src="img/mainBanner7.jpg" alt="센슈얼 누드 글로스 배너 보기" />
-          </button>
-
-          <button
-            class="banner_thumb"
-            type="button"
-            data-slide="7"
-            aria-pressed="false"
-          >
-            <img
-              src="img/mainBanner8.jpg"
-              alt="리플렉션 스킨 글로우 쿠션 배너 보기"
-            />
-          </button>
-
-          <button
-            class="banner_thumb"
-            type="button"
-            data-slide="8"
-            aria-pressed="false"
-          >
-            <img
-              src="img/mainBanner9.jpg"
-              alt="센슈얼 틴티드 샤인 스틱 배너 보기"
-            />
-          </button>
-
-          <button
-            class="banner_thumb"
-            type="button"
-            data-slide="9"
-            aria-pressed="false"
-          >
-            <img src="img/mainBanner10.png" alt="커스텀 매치 배너 보기" />
-          </button>
+      <section class="shop_row">
+        <div class="shop_head">
+          <h2 class="shop_title">새로 나온 신상 라인업</h2>
         </div>
-        <button
-          class="banner_prev"
-          type="button"
-          aria-label="이전 배너"
-        ></button>
+        <div class="shop_swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img
+                      src="img/shop_1.png"
+                      alt="컴피 리바이탈라이징 세럼 미스트 미니 기획세트"
+                    />
+                  </div>
 
-        <button
-          class="banner_next"
-          type="button"
-          aria-label="다음 배너"
-        ></button>
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        15%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">34,000</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        NEW 컴피 리바이탈라이징 세럼 미스트 미니 단품기획세트
+                        28ml
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.9
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (990)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="컴피 세럼 미스트 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품 1 -->
+
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img
+                      src="img/shop_2.png"
+                      alt="실키 스테이 세럼 컨실러 8g"
+                    />
+                  </div>
+
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        10%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">40,500</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        NEW 실키 스테이 세럼 컨실러 8g
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.7
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (330)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="실키 스테이 세럼 컨실러 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품2 -->
+
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img
+                      src="img/shop_3.png"
+                      alt="리플렉션 리퀴드 블러쉬 7.5g"
+                    />
+                  </div>
+
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        10%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">42,300</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        NEW 리플렉션 리퀴드 블러쉬 7.5g
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.8
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (476)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="리플렉션 리퀴드 블러쉬 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품3 -->
+
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img
+                      src="img/shop_4.png"
+                      alt="UV 프로텍터 CC SPF50+/PA++++50ml"
+                    />
+                  </div>
+
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        15%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">39,950</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        NEW UV프로텍터 CC SPF50+/PA++++ 50ml
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.8
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (356)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="UV프로텍터 CC 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품4 -->
+
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img
+                      src="img/shop_5.png"
+                      alt="UV프로텍터 톤업 라벤더 50ml"
+                    />
+                  </div>
+
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        15%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">39,950</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        NEW UV프로텍터 톤업 라벤더 SPF50+/PA++++ 50ml
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.6
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (305)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="UV프로텍터 톤업 라벤더 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품5-->
+
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img
+                      src="img/shop_6.png"
+                      alt="센슈얼 틴티드 샤인 립 세럼 8.5g"
+                    />
+                  </div>
+
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        10%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">36,000</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        NEW 센슈얼 틴티드 샤인 립 세럼 8.5g
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.7
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (697)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="센슈얼 틴티드 샤인 립 세럼 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품6 -->
+
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img
+                      src="img/shop_7.png"
+                      alt="시그니아 리파이닝 워터 에센스 75ml"
+                    />
+                  </div>
+
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        20%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">46,400</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        NEW [소용량] 시그니아 리파이닝 워터 에센스 75ml
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.8
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (289)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="시그니아 리파이닝 워터 에센스 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품7 -->
+
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img src="img/shop_8.png" alt="컴피 컨디셔닝 에센스 150g" />
+                  </div>
+
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        20%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">48,000</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        NEW 컴피 컨디셔닝 에센스 150g
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.7
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (683)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="컴피 컨디셔닝 에센스 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품8 -->
+
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img
+                      src="img/shop_9.png"
+                      alt="부스팅 베이스 UV 프로텍터 35ml"
+                    />
+                  </div>
+
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        15%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">49,300</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        부스팅 베이스 UV 프로텍터 SPF15 35ml
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.7
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (149)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="부스팅 베이스 UV 프로텍터 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품9 -->
+
+            <div class="swiper-slide">
+              <article class="prodCard">
+                <a href="#" class="prodLink">
+                  <div class="prod_img">
+                    <img
+                      src="img/shop_10.png"
+                      alt="리플렉션 스킨 글로우 파운데이션 30g"
+                    />
+                  </div>
+
+                  <div class="prod_content">
+                    <div class="priceArea">
+                      <em class="discountRate">
+                        <span class="blind">할인율</span>
+                        10%
+                      </em>
+
+                      <span class="price">
+                        <span class="blind">할인가</span>
+                        <strong class="val">64,800</strong>원
+                      </span>
+                    </div>
+
+                    <div class="prod_title">
+                      <span class="prod_name">
+                        NEW 리플렉션 스킨 글로우 파운데이션 SPF15/PA++ 30g
+                      </span>
+                    </div>
+
+                    <div class="rate">
+                      <span class="rating">
+                        <span class="star" aria-hidden="true">
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="blind">별점</span>
+                        4.8
+                      </span>
+
+                      <span class="review">
+                        <span class="blind">리뷰 수</span>
+                        (2,508)
+                      </span>
+                    </div>
+                  </div>
+                </a>
+
+                <button
+                  type="button"
+                  class="btnProdLike"
+                  aria-label="리플렉션 스킨 글로우 파운데이션 좋아요"
+                ></button>
+              </article>
+            </div>
+            <!-- 상품10 -->
+          </div>
+          <button
+            type="button"
+            class="shop_prev"
+            aria-label="이전 상품보기"
+          ></button>
+          <button
+            type="button"
+            class="shop_next"
+            aria-label="다음 상품보기"
+          ></button>
+        </div>
       </section>
     </main>
 

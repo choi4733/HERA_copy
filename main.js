@@ -99,3 +99,14 @@ bannerThumbs.forEach((thumb) => {
     restartBannerAutoplay();
   });
 });
+
+// shop swiper
+const shopSwiper = new Swiper(".shop_swiper", {
+  slidesPerView: 4.5,
+  spaceBetween: 12,
+
+  navigation: {
+    prevEl: ".shop_prev",
+    nextEl: ".shop_next",
+  },
+});
