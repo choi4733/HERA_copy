@@ -21,18 +21,45 @@ navLinks.forEach((link) => {
   });
 });
 
-// 헤더 스크롤 이벤트
+// 헤더와 nav
 const header = document.querySelector("#header");
+const nav = document.querySelector(".nav_swiper");
 
-function changeHeaderColor() {
-  if (!header) return;
+let lastScrollY = window.scrollY;
 
-  header.classList.toggle("is_scrolled", window.scrollY > 20);
+function handleHeaderScroll() {
+  if (!header || !nav) return;
+
+  const currentScrollY = window.scrollY;
+  const scrollDifference = currentScrollY - lastScrollY;
+
+  // 기존 헤더 색상 변경
+  header.classList.toggle("is_scrolled", currentScrollY > 20);
+
+  // 맨 위에서는 nav 표시
+  if (currentScrollY <= 20) {
+    nav.style.display = "block";
+    lastScrollY = currentScrollY;
+    return;
+  }
+
+  // 너무 작은 움직임은 무시
+  if (Math.abs(scrollDifference) < 5) return;
+
+  if (scrollDifference > 0) {
+    // 아래로 스크롤하면 nav 숨김
+    nav.style.display = "none";
+  } else {
+    // 위로 스크롤하면 nav 표시
+    nav.style.display = "block";
+  }
+
+  lastScrollY = currentScrollY;
 }
 
-changeHeaderColor();
+handleHeaderScroll();
 
-window.addEventListener("scroll", changeHeaderColor, {
+window.addEventListener("scroll", handleHeaderScroll, {
   passive: true,
 });
 

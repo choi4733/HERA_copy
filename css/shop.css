@@ -205,3 +205,35 @@
   outline: 2px solid #121212;
   outline-offset: 2px;
 }
+
+/* 좋아요 */
+.btnProdLike::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  background-image: url(../img/ic_heart_s32_a0a0a0.svg);
+}
+
+/* 랭크 */
+
+.rank_container {
+  margin-bottom: 80px;
+}
+.swiper-container {
+  padding-top: 10px;
+}
+.rank {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.swiper-slide .rank {
+  line-height: 53px;
+  font-size: 2.8rem;
+  top: -13px;
+}
